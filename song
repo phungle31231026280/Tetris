@@ -1,0 +1,25 @@
+private static void PlayConsoleMusic()
+        {
+            if (PauseMode == false)
+            {
+                new Thread(() =>
+                {
+                    if (PlayGame)
+                    {
+                        var gameMusic = new SoundPlayer();
+                        while (PlayGame)
+                        {
+                            gameMusic.SoundLocation = @"C:\Users\yyord\OneDrive\Desktop\My projects\Console_Games\ConsoleGamesCSharp\songs\tetris-gameboy-02 (1).wav";
+                            gameMusic.PlaySync();
+                        }
+                    }
+
+                }).Start();
+            }
+        }
+
+        static void PlayMusic(string songUrl)
+        {
+            var myPlayer = new SoundPlayer();
+            myPlayer.SoundLocation = songUrl;
+            myPlayer.Play()
