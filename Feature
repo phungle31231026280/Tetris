@@ -12,7 +12,7 @@ namespace Thunghiem1
         public System.Drawing.Color Color { get; set; }
         //FIGURES
         public static int[,] Figure1 = new int[1, 4] { { 1, 1, 1, 1 } }; // ""  ----  "" line   
-        public static int[,] Figure2 = new int[2, 2] { { 1, 1 }, { 1, 1 } }; // ""  [ ]  "" square          
+        public static int[,] Figure2 = new int[2, 2] { { 1, 1 }, { 1, 1 } }; // ""  [ ]  "" square             
         public static int[,] Figure3 = new int[2, 3] { { 0, 1, 0 }, { 1, 1, 1 } }; // ""  |-  "" T
         public static int[,] Figure4 = new int[2, 3] { { 0, 1, 1 }, { 1, 1, 0 } }; // ""  __|¯¯  "" S
         public static int[,] Figure5 = new int[2, 3] { { 1, 1, 0 }, { 0, 1, 1 } }; // ""  ¯¯|__  "" Z
@@ -33,7 +33,7 @@ namespace Thunghiem1
         public List<int[]> location = new List<int[]>();
         private bool isErect = false;
         //static void DrawToMap( int[,] content, ConsoleColor color)
-        //{
+        //{  
         //    Console.ForegroundColor = color;
         //    Console.Write(content);
         //}
@@ -80,7 +80,7 @@ namespace Thunghiem1
 
 
 
-
+  
                     }
                     
                 }
